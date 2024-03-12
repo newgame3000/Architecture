@@ -1,0 +1,1078 @@
+{
+  "id" : 1,
+  "name" : "Лабораторная работа 1",
+  "description" : "Description",
+  "lastModifiedDate" : "2024-03-12T16:52:59Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICAgIG5hbWUgItCb0LDQsdC+0YDQsNGC0L7RgNC90LDRjyDRgNCw0LHQvtGC0LAgMSIKCiAgICBtb2RlbCB7CiAgICAgICAgdXNlciA9IHBlcnNvbiAi0J/QsNGB0YHQsNC20LjRgCIKICAgICAgICBtYWluX3VzZXIgPSBwZXJzb24gItCS0L7QtNC40YLQtdC70YwiCgogICAgICAgIHNlYXJjaF9zeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAi0KHQtdGA0LLQuNGBINC/0L7QuNGB0LrQsCDQv9C+0L/Rg9GC0YfQuNC60L7QsiIgewoKICAgICAgICAgICAgYXV0b19zeXN0ZW0gPSBjb250YWluZXIgItCh0LjRgdGC0LXQvNCwINCw0LLRgtC+0YDQuNC30LDRhtC40LgiIHsKICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCQ0LLRgtC+0YDQuNC30LDRhtC40Y8g0Lgg0YPQv9GA0LDQstC70LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GP0LzQuCIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgcm91dGVfc3lzdGVtID0gY29udGFpbmVyICLQodC10YDQstC40YEg0LzQsNGA0YjRgNGD0YLQvtCyIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0KHQvtC30LTQsNC90LjQtS/RhdGA0LDQvdC10L3QuNC1INC40L3RhNC+0YDQvNCw0YbQuNC4INC+INC80LDRgNGI0YDRg9GC0LDRhSIKICAgICAgICAgICAgfQogICAgICAgICAgICB0cmF2ZWxfc3lzdGVtID0gY29udGFpbmVyICLQodC10YDQstC40YEg0L/QvtC10LfQtNC+0LoiIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQodC+0LfQtNCw0L3QuNC1L9GF0YDQsNC90LXQvdC40LUg0LjQvdGE0L7RgNC80LDRhtC40Lgg0L4g0L/QvtC10LfQtNC60LDRhSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZGIgPSBjb250YWluZXIgItCR0LDQt9CwINC00LDQvdC90YvRhSIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCl0YDQsNC90LXQvdC40LUg0LTQsNC90L3Ri9GFINC+INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRj9GFLCDQv9C+0LXQt9C00LrQsNGFINC4INC80LDRgNGI0YDRg9GC0LDRhSIKCiAgICAgICAgICAgICAgICB1c2VyX2RiID0gY29tcG9uZW50ICAi0JHQsNC30LAg0LTQsNC90L3Ri9GFINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5IiB7CiAgICAgICAgICAgICAgICAgICAgdGFncyAiZGF0YWJhc2UiCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgdHJhdmVsX2RiID0gY29tcG9uZW50ICAi0JHQsNC30LAg0LTQsNC90L3Ri9GFINC/0L7QtdC30LTQvtC6InsKICAgICAgICAgICAgICAgICAgICB0YWdzICJkYXRhYmFzZSIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICByb3V0ZV9kYiA9IGNvbXBvbmVudCAgItCR0LDQt9CwINC00LDQvdC90YvRhSDQvNCw0YDRiNGA0YPRgtC+0LIiewogICAgICAgICAgICAgICAgICAgIHRhZ3MgImRhdGFiYXNlIgogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIHRhZ3MgImRhdGFiYXNlIgogICAgICAgICAgICB9CiAgICAgICAgfSAgICAgIAoKICAgICAgICB1c2VyIC0+IGF1dG9fc3lzdGVtICLQn9C+0LjRgdC6INC/0L7QtdC30LTQutC4IgogICAgICAgIG1haW5fdXNlciAtPiBhdXRvX3N5c3RlbSAi0KDQtdCz0LjRgdGC0YDQsNGG0LjRjyDQvNCw0YDRiNGA0YPRgtCwIgogICAgICAgIGF1dG9fc3lzdGVtIC0+IHJvdXRlX3N5c3RlbSAi0KDQtdCz0LjRgdGC0YDQsNGG0LjRjyDQvNCw0YDRiNGA0YPRgtCwIgogICAgICAgIGF1dG9fc3lzdGVtIC0+IHRyYXZlbF9zeXN0ZW0gItCg0LXQs9C40YHRgtGA0LDRhtC40Y8g0L/QvtC10LfQtNC60LgiCiAgICAgICAgdHJhdmVsX3N5c3RlbSAtPiByb3V0ZV9zeXN0ZW0gItCX0LDQv9GA0L7RgSDQtNCw0L3QvdGL0YUg0L4g0LzQsNGA0YjRgNGD0YLQtSIKICAgICAgICByb3V0ZV9zeXN0ZW0gLT4gcm91dGVfZGIgItCX0LDQv9GA0L7RgS/Qt9Cw0L/QuNGB0Ywg0LTQsNC90L3Ri9GFINC+INC80LDRgNGI0YDRg9GC0LUiCiAgICAgICAgdHJhdmVsX3N5c3RlbSAtPiB0cmF2ZWxfZGIgItCX0LDQv9GA0L7RgS/Qt9Cw0L/QuNGB0Ywg0LTQsNC90L3Ri9GFINC+INC/0L7QtdC30LTQutC1IgogICAgICAgIGF1dG9fc3lzdGVtIC0+IHVzZXJfZGIgItCX0LDQv9GA0L7RgS/Qt9Cw0L/QuNGB0Ywg0LTQsNC90L3Ri9GFINC+INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtSIKCiAgICAgICAgcHJvZHVjdGlvbiA9IGRlcGxveW1lbnRFbnZpcm9ubWVudCAi0KDQtdC30YPQu9GM0YLQsNGCIiB7CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICLQodC10YDQstC10YAg0YHQuNGB0YLQtdC80Ysg0LDQstGC0L7RgNC40LfQsNGG0LjQuCIgewogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXV0b19zeXN0ZW0KICAgICAgICAgICAgfQoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgItCh0LXRgNCy0LXRgCDRgdC40YHRgtC10LzRiyDQvNCw0YDRiNGA0YPRgtC+0LIiIHsKICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHJvdXRlX3N5c3RlbQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAi0KHQtdGA0LLQtdGAINGB0LjRgdGC0LXQvNGLINC/0L7QtdC30LTQvtC6IiB7CiAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSB0cmF2ZWxfc3lzdGVtCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICLQkdCw0LfRiyDQtNCw0L3QvdGL0YUiIHsKICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGRiCiAgICAgICAgICAgICAgICB0YWdzICJkYXRhYmFzZSIKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgdGhlbWVzIGRlZmF1bHQKCiAgICAgICAgc3lzdGVtQ29udGV4dCBzZWFyY2hfc3lzdGVtICJDb250ZXh0IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IAogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIHNlYXJjaF9zeXN0ZW0gIkNvbnRhaW5lciIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IGRiICJDb21wb21lbXQiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgogICAgICAgIGRlcGxveW1lbnQgc2VhcmNoX3N5c3RlbSBwcm9kdWN0aW9uIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgc2VhcmNoX3N5c3RlbSAiYXV0b191c2VyIiAi0KHQvtC30LTQsNC90LjQtSDQvdC+0LLQvtCz0L4g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgdXNlciAtPiBhdXRvX3N5c3RlbSAi0KDQtdCz0LjRgdGC0YDQsNGG0LjRjyAoUE9TVCkiCiAgICAgICAgICAgIG1haW5fdXNlciAtPiBhdXRvX3N5c3RlbSAi0KDQtdCz0LjRgdGC0YDQsNGG0LjRjyAoUE9TVCkiCiAgICAgICAgICAgIGF1dG9fc3lzdGVtIC0+IGRiICLQodC+0YXRgNCw0L3QuNGC0Ywg0LTQsNC90L3Ri9C1INC+INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtSIgCiAgICAgICAgfQoKICAgICAgICBkeW5hbWljIHNlYXJjaF9zeXN0ZW0gInNlYXJjaF9sb2dpbiIgItCf0L7QuNGB0Log0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINC/0L4g0LvQvtCz0LjQvdGDIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgdXNlciAtPiBhdXRvX3N5c3RlbSAi0J/QvtC40YHQuiDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQu9C+0LPQuNC90YMgKEdFVCkiCiAgICAgICAgICAgIG1haW5fdXNlciAtPiBhdXRvX3N5c3RlbSAi0J/QvtC40YHQuiDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQu9C+0LPQuNC90YMgKEdFVCkiCiAgICAgICAgICAgIGF1dG9fc3lzdGVtIC0+IGRiICLQn9C+0LjRgdC6INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQv9C+INC70L7Qs9C40L3RgyIgCiAgICAgICAgfQoKICAgICAgICBkeW5hbWljIHNlYXJjaF9zeXN0ZW0gInNlYXJjaF9uYW1lIiAi0J/QvtC40YHQuiDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQvNCw0YHQutC1INC40LzRjyDQuCDRhNCw0LzQuNC70LjQuCIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHVzZXIgLT4gYXV0b19zeXN0ZW0gItCf0L7QuNGB0Log0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINC/0L4g0LzQsNGB0LrQtSDQuNC80Y8g0Lgg0YTQsNC80LjQu9C40LggKEdFVCkiCiAgICAgICAgICAgIG1haW5fdXNlciAtPiBhdXRvX3N5c3RlbSAi0J/QvtC40YHQuiDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQvNCw0YHQutC1INC40LzRjyDQuCDRhNCw0LzQuNC70LjQuCAoR0VUKSIKICAgICAgICAgICAgYXV0b19zeXN0ZW0gLT4gZGIgItCf0L7QuNGB0Log0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINC/0L4g0LzQsNGB0LrQtSDQuNC80Y8g0Lgg0YTQsNC80LjQu9C40LgiIAogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBzZWFyY2hfc3lzdGVtICJjcmVhdGVfcm91dGUiICLQodC+0LfQtNCw0L3QuNC1INC80LDRgNGI0YDRg9GC0LAiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBtYWluX3VzZXIgLT4gYXV0b19zeXN0ZW0gItCh0L7Qt9C00LDQvdC40LUg0LzQsNGA0YjRgNGD0YLQsCAoUE9TVCkiCiAgICAgICAgICAgIGF1dG9fc3lzdGVtIC0+IGRiICLQn9C+0LjRgdC6INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjywg0KHQvtGF0YDQsNC90LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIgogICAgICAgICAgICBhdXRvX3N5c3RlbSAtPiByb3V0ZV9zeXN0ZW0gItCh0L7Qt9C00LDQvdC40LUg0LzQsNGA0YjRgNGD0YLQsCAoUE9TVCkiCiAgICAgICAgICAgIHJvdXRlX3N5c3RlbSAtPiBkYiAi0KHQvtC30LTQsNC90LjQtSDQvNCw0YDRiNGA0YPRgtCwIgogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBzZWFyY2hfc3lzdGVtICJzZWFyY2hfcm91dGUiICLQn9C+0LvRg9GH0LXQvdC40LUg0LzQsNGA0YjRgNGD0YLQvtCyINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHVzZXIgLT4gYXV0b19zeXN0ZW0gItCf0L7Qu9GD0YfQtdC90LjQtSDQvNCw0YDRiNGA0YPRgtC+0LIg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIChHRVQpIgogICAgICAgICAgICBhdXRvX3N5c3RlbSAtPiByb3V0ZV9zeXN0ZW0gItCf0L7Qu9GD0YfQtdC90LjQtSDQvNCw0YDRiNGA0YPRgtC+0LIg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIChHRVQpIgogICAgICAgICAgICByb3V0ZV9zeXN0ZW0gLT4gZGIgItCf0L7Qu9GD0YfQtdC90LjQtSDQvNCw0YDRiNGA0YPRgtC+0LIg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIgogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBzZWFyY2hfc3lzdGVtICJjcmVhdGVfdHJhdmVsIiAi0KHQvtC30LTQsNC90LjQtSDQv9C+0LXQt9C00LrQuCIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIG1haW5fdXNlciAtPiBhdXRvX3N5c3RlbSAi0KHQvtC30LTQsNC90LjQtSDQv9C+0LXQt9C00LrQuCAoUE9TVCkiCiAgICAgICAgICAgIGF1dG9fc3lzdGVtIC0+IGRiICLQn9C+0LjRgdC6INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjywg0KHQvtGF0YDQsNC90LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIgogICAgICAgICAgICBhdXRvX3N5c3RlbSAtPiB0cmF2ZWxfc3lzdGVtICLQodC+0LfQtNCw0L3QuNC1INC/0L7QtdC30LTQutC4IChQT1NUKSIKICAgICAgICAgICAgdHJhdmVsX3N5c3RlbSAtPiByb3V0ZV9zeXN0ZW0gItCf0L7QuNGB0Log0LzQsNGA0YjRgNGD0YLQsCAoR0VUKSIKICAgICAgICAgICAgcm91dGVfc3lzdGVtIC0+IGRiICLQn9C+0LjRgdC6INC80LDRgNGI0YDRg9GC0LAiCiAgICAgICAgICAgIHRyYXZlbF9zeXN0ZW0gLT4gZGIgItCX0LDQv9C40YHRjCDQv9C+0LXQt9C00LrQuCIKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgc2VhcmNoX3N5c3RlbSAiYWRkX3RvX3RyYXZlbCIgItCf0L7QtNC60LvRjtGH0LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9C10Lkg0Log0L/QvtC10LfQtNC60LUiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IGF1dG9fc3lzdGVtICLQn9C+0LTQutC70Y7Rh9C10L3QuNC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5INC6INC/0L7QtdC30LTQutC1IChQT1NUKSIKICAgICAgICAgICAgYXV0b19zeXN0ZW0gLT4gZGIgItCf0L7QuNGB0Log0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPLCDQodC+0YXRgNCw0L3QtdC90LjQtSDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgICAgIGF1dG9fc3lzdGVtIC0+IHRyYXZlbF9zeXN0ZW0gItCf0L7QtNC60LvRjtGH0LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9C10Lkg0Log0L/QvtC10LfQtNC60LUgKFBPU1QpIgogICAgICAgICAgICB0cmF2ZWxfc3lzdGVtIC0+IGRiICLQlNC+0LHQsNCy0LvQtdC90LjQtSDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0Log0L/QvtC10LfQtNC60LUiCiAgICAgICAgfQoKICAgICAgICAgZHluYW1pYyBzZWFyY2hfc3lzdGVtICJpbmZvX3RyYXZlbCIgItCf0L7Qu9GD0YfQtdC90LjQtSDQuNC90YTQvtGA0LzQsNGG0LjQuCDQviDQv9C+0LXQt9C00LrQtSIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIG1haW5fdXNlciAtPiBhdXRvX3N5c3RlbSAi0J/QvtC70YPRh9C10L3QuNC1INC40L3RhNC+0YDQvNCw0YbQuNC4INC+INC/0L7QtdC30LTQutC1IChQT1NUKSIKICAgICAgICAgICAgdXNlciAtPiBhdXRvX3N5c3RlbSAi0J/QvtC70YPRh9C10L3QuNC1INC40L3RhNC+0YDQvNCw0YbQuNC4INC+INC/0L7QtdC30LTQutC1IChQT1NUKSIKICAgICAgICAgICAgYXV0b19zeXN0ZW0gLT4gdHJhdmVsX3N5c3RlbSAi0J/QvtC70YPRh9C10L3QuNC1INC40L3RhNC+0YDQvNCw0YbQuNC4INC+INC/0L7QtdC30LTQutC1IChQT1NUKSIKICAgICAgICAgICAgdHJhdmVsX3N5c3RlbSAtPiBkYiAi0J/QvtC70YPRh9C10L3QuNC1INC40L3RhNC+0YDQvNCw0YbQuNC4INC+INC/0L7QtdC30LTQutC1IgogICAgICAgIH0KCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiZGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0K"
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "main_user"
+      },
+      "name" : "Водитель",
+      "relationships" : [ {
+        "id" : "13",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "8ad6ca86-12c5-47b4-a420-5aa9f89fa048"
+        },
+        "sourceId" : "2",
+        "destinationId" : "4",
+        "description" : "Регистрация маршрута"
+      }, {
+        "id" : "14",
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Регистрация маршрута",
+        "linkedRelationshipId" : "13"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "user"
+      },
+      "name" : "Пассажир",
+      "relationships" : [ {
+        "id" : "12",
+        "sourceId" : "1",
+        "destinationId" : "3",
+        "description" : "Поиск поездки",
+        "linkedRelationshipId" : "11"
+      }, {
+        "id" : "11",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "efc6f946-1092-4e0e-b04a-82f51dd05130"
+        },
+        "sourceId" : "1",
+        "destinationId" : "4",
+        "description" : "Поиск поездки"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "3",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "search_system"
+      },
+      "name" : "Сервис поиска попутчиков",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "7",
+        "tags" : "Element,Container,database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "db"
+        },
+        "name" : "База данных",
+        "description" : "Хранение данных о пользователях, поездках и маршрутах",
+        "components" : [ {
+          "id" : "10",
+          "tags" : "Element,Component,database",
+          "properties" : {
+            "structurizr.dsl.identifier" : "route_db"
+          },
+          "name" : "База данных маршрутов",
+          "documentation" : { }
+        }, {
+          "id" : "8",
+          "tags" : "Element,Component,database",
+          "properties" : {
+            "structurizr.dsl.identifier" : "user_db"
+          },
+          "name" : "База данных пользователей",
+          "documentation" : { }
+        }, {
+          "id" : "9",
+          "tags" : "Element,Component,database",
+          "properties" : {
+            "structurizr.dsl.identifier" : "travel_db"
+          },
+          "name" : "База данных поездок",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "6",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "travel_system"
+        },
+        "name" : "Сервис поездок",
+        "description" : "Создание/хранение информации о поездках",
+        "relationships" : [ {
+          "id" : "20",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "132b401d-03c5-46b1-b094-5306030b47f3"
+          },
+          "sourceId" : "6",
+          "destinationId" : "9",
+          "description" : "Запрос/запись данных о поездке"
+        }, {
+          "id" : "17",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a78938d0-2fd9-4f34-ad82-b030fc6d36ae"
+          },
+          "sourceId" : "6",
+          "destinationId" : "5",
+          "description" : "Запрос данных о маршруте"
+        }, {
+          "id" : "21",
+          "sourceId" : "6",
+          "destinationId" : "7",
+          "description" : "Запрос/запись данных о поездке",
+          "linkedRelationshipId" : "20"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "route_system"
+        },
+        "name" : "Сервис маршрутов",
+        "description" : "Создание/хранение информации о маршрутах",
+        "relationships" : [ {
+          "id" : "19",
+          "sourceId" : "5",
+          "destinationId" : "7",
+          "description" : "Запрос/запись данных о маршруте",
+          "linkedRelationshipId" : "18"
+        }, {
+          "id" : "18",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2e3c27c9-e0a3-46ae-b036-3523d2edd00d"
+          },
+          "sourceId" : "5",
+          "destinationId" : "10",
+          "description" : "Запрос/запись данных о маршруте"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "auto_system"
+        },
+        "name" : "Система авторизации",
+        "description" : "Авторизация и управление пользователями",
+        "relationships" : [ {
+          "id" : "16",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "68f1dced-2bc0-4e0f-8224-94c428a27d60"
+          },
+          "sourceId" : "4",
+          "destinationId" : "6",
+          "description" : "Регистрация поездки"
+        }, {
+          "id" : "15",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6144d38e-e710-4a06-a488-0d6a36846f40"
+          },
+          "sourceId" : "4",
+          "destinationId" : "5",
+          "description" : "Регистрация маршрута"
+        }, {
+          "id" : "22",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d2a02bee-d5de-48f0-b130-93ec26e56368"
+          },
+          "sourceId" : "4",
+          "destinationId" : "8",
+          "description" : "Запрос/запись данных о пользователе"
+        }, {
+          "id" : "23",
+          "sourceId" : "4",
+          "destinationId" : "7",
+          "description" : "Запрос/запись данных о пользователе",
+          "linkedRelationshipId" : "22"
+        } ],
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "26",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "a50ed30a-94cf-4eac-bb9c-dd1132a50ed3"
+      },
+      "name" : "Сервер системы маршрутов",
+      "environment" : "Результат",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "27",
+        "tags" : "Container Instance",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cfca858e-2689-4adf-b0d8-c6b1674390b5"
+        },
+        "relationships" : [ {
+          "id" : "35",
+          "sourceId" : "27",
+          "destinationId" : "34",
+          "description" : "Запрос/запись данных о маршруте",
+          "linkedRelationshipId" : "19"
+        } ],
+        "environment" : "Результат",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "5"
+      } ]
+    }, {
+      "id" : "33",
+      "tags" : "Element,Deployment Node,database",
+      "properties" : {
+        "structurizr.dsl.identifier" : "a0b2f399-cea6-41d8-8b9b-7ea0e37d6211"
+      },
+      "name" : "Базы данных",
+      "environment" : "Результат",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "34",
+        "tags" : "Container Instance",
+        "properties" : {
+          "structurizr.dsl.identifier" : "00160dac-7ff5-4213-be89-07720bd6e190"
+        },
+        "environment" : "Результат",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "7"
+      } ]
+    }, {
+      "id" : "29",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "03f7c418-cde6-4d50-8127-a9dda4c000a1"
+      },
+      "name" : "Сервер системы поездок",
+      "environment" : "Результат",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "30",
+        "tags" : "Container Instance",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ee12ab70-a079-4409-823a-3dc117e3ec1c"
+        },
+        "relationships" : [ {
+          "id" : "36",
+          "sourceId" : "30",
+          "destinationId" : "34",
+          "description" : "Запрос/запись данных о поездке",
+          "linkedRelationshipId" : "21"
+        }, {
+          "id" : "31",
+          "sourceId" : "30",
+          "destinationId" : "27",
+          "description" : "Запрос данных о маршруте",
+          "linkedRelationshipId" : "17"
+        } ],
+        "environment" : "Результат",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "6"
+      } ]
+    }, {
+      "id" : "24",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "b1dd88f0-9154-4644-ab2c-38b819d2d110"
+      },
+      "name" : "Сервер системы авторизации",
+      "environment" : "Результат",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "25",
+        "tags" : "Container Instance",
+        "properties" : {
+          "structurizr.dsl.identifier" : "134a57f7-249d-4efc-8cc3-123462b0bf37"
+        },
+        "relationships" : [ {
+          "id" : "28",
+          "sourceId" : "25",
+          "destinationId" : "27",
+          "description" : "Регистрация маршрута",
+          "linkedRelationshipId" : "15"
+        }, {
+          "id" : "32",
+          "sourceId" : "25",
+          "destinationId" : "30",
+          "description" : "Регистрация поездки",
+          "linkedRelationshipId" : "16"
+        }, {
+          "id" : "37",
+          "sourceId" : "25",
+          "destinationId" : "34",
+          "description" : "Запрос/запись данных о пользователе",
+          "linkedRelationshipId" : "23"
+        } ],
+        "environment" : "Результат",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "4"
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "Context",
+      "order" : 1,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 1550,
+        "height" : 1300
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 950,
+        "y" : 200
+      }, {
+        "id" : "3",
+        "x" : 575,
+        "y" : 800
+      } ],
+      "relationships" : [ {
+        "id" : "14"
+      }, {
+        "id" : "12"
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "Container",
+      "order" : 2,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 1550,
+        "height" : 3191
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 199
+      }, {
+        "id" : "2",
+        "x" : 949,
+        "y" : 199
+      }, {
+        "id" : "4",
+        "x" : 574,
+        "y" : 799
+      }, {
+        "id" : "5",
+        "x" : 266,
+        "y" : 1999
+      }, {
+        "id" : "6",
+        "x" : 574,
+        "y" : 1399
+      }, {
+        "id" : "7",
+        "x" : 795,
+        "y" : 2599
+      } ],
+      "relationships" : [ {
+        "id" : "17"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "15",
+        "vertices" : [ {
+          "x" : 424,
+          "y" : 1399
+        }, {
+          "x" : 424,
+          "y" : 1699
+        } ]
+      }, {
+        "id" : "13"
+      }, {
+        "id" : "11"
+      }, {
+        "id" : "23",
+        "vertices" : [ {
+          "x" : 1174,
+          "y" : 1399
+        }, {
+          "x" : 1174,
+          "y" : 1699
+        } ]
+      }, {
+        "id" : "21"
+      }, {
+        "id" : "19"
+      } ]
+    } ],
+    "componentViews" : [ {
+      "key" : "Compomemt",
+      "order" : 3,
+      "dimensions" : {
+        "width" : 2390,
+        "height" : 2591
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "containerId" : "7",
+      "externalContainerBoundariesVisible" : false,
+      "elements" : [ {
+        "id" : "4",
+        "x" : 970,
+        "y" : 200
+      }, {
+        "id" : "5",
+        "x" : 291,
+        "y" : 1400
+      }, {
+        "id" : "6",
+        "x" : 970,
+        "y" : 800
+      }, {
+        "id" : "8",
+        "x" : 1720,
+        "y" : 2000
+      }, {
+        "id" : "9",
+        "x" : 970,
+        "y" : 2000
+      }, {
+        "id" : "10",
+        "x" : 220,
+        "y" : 2000
+      } ],
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "15",
+        "vertices" : [ {
+          "x" : 820,
+          "y" : 800
+        } ]
+      }, {
+        "id" : "22",
+        "vertices" : [ {
+          "x" : 1570,
+          "y" : 800
+        } ]
+      }, {
+        "id" : "20"
+      } ]
+    } ],
+    "dynamicViews" : [ {
+      "key" : "create_route",
+      "order" : 8,
+      "description" : "Создание маршрута",
+      "dimensions" : {
+        "width" : 1104,
+        "height" : 2591
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "13",
+        "description" : "Создание маршрута (POST)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "23",
+        "description" : "Поиск пользователя, Сохранение пользователя",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 819,
+          "y" : 1400
+        }, {
+          "x" : 819,
+          "y" : 1700
+        } ]
+      }, {
+        "id" : "15",
+        "description" : "Создание маршрута (POST)",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "19",
+        "description" : "Создание маршрута",
+        "order" : "4",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "2",
+        "x" : 373,
+        "y" : 200
+      }, {
+        "id" : "4",
+        "x" : 373,
+        "y" : 800
+      }, {
+        "id" : "5",
+        "x" : 219,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 373,
+        "y" : 2000
+      } ]
+    }, {
+      "key" : "create_travel",
+      "order" : 10,
+      "description" : "Создание поездки",
+      "dimensions" : {
+        "width" : 1419,
+        "height" : 3191
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "13",
+        "description" : "Создание поездки (POST)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "23",
+        "description" : "Поиск пользователя, Сохранение пользователя",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1127,
+          "y" : 1399
+        }, {
+          "x" : 1127,
+          "y" : 1699
+        } ]
+      }, {
+        "id" : "16",
+        "description" : "Создание поездки (POST)",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "17",
+        "description" : "Поиск маршрута (GET)",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "19",
+        "description" : "Поиск маршрута",
+        "order" : "5",
+        "response" : false
+      }, {
+        "id" : "21",
+        "description" : "Запись поездки",
+        "order" : "6",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "2",
+        "x" : 681,
+        "y" : 199
+      }, {
+        "id" : "4",
+        "x" : 681,
+        "y" : 799
+      }, {
+        "id" : "5",
+        "x" : 219,
+        "y" : 1999
+      }, {
+        "id" : "6",
+        "x" : 527,
+        "y" : 1399
+      }, {
+        "id" : "7",
+        "x" : 748,
+        "y" : 2599
+      } ]
+    }, {
+      "key" : "search_route",
+      "order" : 9,
+      "description" : "Получение маршрутов пользователя",
+      "dimensions" : {
+        "width" : 890,
+        "height" : 2591
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "11",
+        "description" : "Получение маршрутов пользователя (GET)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "15",
+        "description" : "Получение маршрутов пользователя (GET)",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "19",
+        "description" : "Получение маршрутов пользователя",
+        "order" : "3",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 220,
+        "y" : 200
+      }, {
+        "id" : "4",
+        "x" : 220,
+        "y" : 800
+      }, {
+        "id" : "5",
+        "x" : 220,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 220,
+        "y" : 2000
+      } ]
+    }, {
+      "key" : "auto_user",
+      "order" : 5,
+      "description" : "Создание нового пользователя",
+      "dimensions" : {
+        "width" : 1550,
+        "height" : 1991
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "11",
+        "description" : "Регистрация (POST)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "13",
+        "description" : "Регистрация (POST)",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "23",
+        "description" : "Сохранить данные о пользователе",
+        "order" : "3",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 199
+      }, {
+        "id" : "2",
+        "x" : 949,
+        "y" : 199
+      }, {
+        "id" : "4",
+        "x" : 574,
+        "y" : 799
+      }, {
+        "id" : "7",
+        "x" : 574,
+        "y" : 1399
+      } ]
+    }, {
+      "key" : "info_travel",
+      "order" : 12,
+      "description" : "Получение информации о поездке",
+      "dimensions" : {
+        "width" : 1550,
+        "height" : 2591
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "13",
+        "description" : "Получение информации о поездке (POST)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "11",
+        "description" : "Получение информации о поездке (POST)",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "16",
+        "description" : "Получение информации о поездке (POST)",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "21",
+        "description" : "Получение информации о поездке",
+        "order" : "4",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 950,
+        "y" : 200
+      }, {
+        "id" : "4",
+        "x" : 575,
+        "y" : 800
+      }, {
+        "id" : "6",
+        "x" : 575,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 575,
+        "y" : 2000
+      } ]
+    }, {
+      "key" : "search_login",
+      "order" : 6,
+      "description" : "Поиск пользователя по логину",
+      "dimensions" : {
+        "width" : 1550,
+        "height" : 1991
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "11",
+        "description" : "Поиск пользователя по логину (GET)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "13",
+        "description" : "Поиск пользователя по логину (GET)",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "23",
+        "description" : "Поиск пользователя по логину",
+        "order" : "3",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 199
+      }, {
+        "id" : "2",
+        "x" : 949,
+        "y" : 199
+      }, {
+        "id" : "4",
+        "x" : 574,
+        "y" : 799
+      }, {
+        "id" : "7",
+        "x" : 574,
+        "y" : 1399
+      } ]
+    }, {
+      "key" : "add_to_travel",
+      "order" : 11,
+      "description" : "Подключение пользователей к поездке",
+      "dimensions" : {
+        "width" : 1104,
+        "height" : 2591
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "11",
+        "description" : "Подключение пользователей к поездке (POST)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "23",
+        "description" : "Поиск пользователя, Сохранение пользователя",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 819,
+          "y" : 1400
+        }, {
+          "x" : 819,
+          "y" : 1700
+        } ]
+      }, {
+        "id" : "16",
+        "description" : "Подключение пользователей к поездке (POST)",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "21",
+        "description" : "Добавление пользователя к поездке",
+        "order" : "4",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 373,
+        "y" : 200
+      }, {
+        "id" : "4",
+        "x" : 373,
+        "y" : 800
+      }, {
+        "id" : "6",
+        "x" : 219,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 373,
+        "y" : 2000
+      } ]
+    }, {
+      "key" : "search_name",
+      "order" : 7,
+      "description" : "Поиск пользователя по маске имя и фамилии",
+      "dimensions" : {
+        "width" : 1550,
+        "height" : 1991
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : false,
+      "relationships" : [ {
+        "id" : "11",
+        "description" : "Поиск пользователя по маске имя и фамилии (GET)",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "13",
+        "description" : "Поиск пользователя по маске имя и фамилии (GET)",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "23",
+        "description" : "Поиск пользователя по маске имя и фамилии",
+        "order" : "3",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 199
+      }, {
+        "id" : "2",
+        "x" : 949,
+        "y" : 199
+      }, {
+        "id" : "4",
+        "x" : 574,
+        "y" : 799
+      }, {
+        "id" : "7",
+        "x" : 574,
+        "y" : 1399
+      } ]
+    } ],
+    "deploymentViews" : [ {
+      "key" : "Deployment-001",
+      "generatedKey" : true,
+      "order" : 4,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 1772,
+        "height" : 2611
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "environment" : "Результат",
+      "elements" : [ {
+        "id" : "33",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "34",
+        "x" : 899,
+        "y" : 2020
+      }, {
+        "id" : "24",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "25",
+        "x" : 861,
+        "y" : 220
+      }, {
+        "id" : "26",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "27",
+        "x" : 220,
+        "y" : 1420
+      }, {
+        "id" : "29",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "30",
+        "x" : 861,
+        "y" : 820
+      } ],
+      "relationships" : [ {
+        "id" : "28",
+        "vertices" : [ {
+          "x" : 682,
+          "y" : 716
+        } ]
+      }, {
+        "id" : "37",
+        "vertices" : [ {
+          "x" : 1491,
+          "y" : 716
+        }, {
+          "x" : 1491,
+          "y" : 1224
+        }, {
+          "x" : 1332,
+          "y" : 1824
+        } ]
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "32"
+      }, {
+        "id" : "31"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "database",
+          "shape" : "Cylinder"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "Context"
+    }
+  }
+}
