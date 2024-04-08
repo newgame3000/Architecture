@@ -1,0 +1,3 @@
+/home/kirill/Architecture/lab3/build/CMakeFiles/TravelServer.out.dir
+/home/kirill/Architecture/lab3/build/CMakeFiles/edit_cache.dir
+/home/kirill/Architecture/lab3/build/CMakeFiles/rebuild_cache.dir

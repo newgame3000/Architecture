@@ -159,7 +159,7 @@ void UserRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerRes
         return;
     }
 
-    if (request.getURI().find("/user/regiser") != -1)
+    if (request.getURI().find("/user/register") != -1)
     {
         try
         {

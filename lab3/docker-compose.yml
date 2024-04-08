@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+    mongo:
+      image: mongo:5.0
+      container_name: mongodb
+      restart: on-failure
+      volumes:
+        - mongodbdata:/data/db
+      ports:
+        - '27017:27017'
+      healthcheck:
+        test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+volumes:
+    mongodbdata:
