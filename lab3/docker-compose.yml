@@ -1,0 +1,38 @@
+version: '3.2'
+
+services:
+  lab3:
+    tty: true
+    container_name: lab3
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MONGO_DB_HOST=mongo
+      - MONGO_DB_PORT=27017
+    depends_on:
+      mongo:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+    networks:
+      - lab3
+
+  mongo:
+    image: mongo:5.0
+    restart: on-failure
+    volumes:
+      - mongodbdata:/data/db
+    ports:
+      - '27017:27017'
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+    networks:
+      - lab3
+volumes:
+    mongodbdata: 
+
+networks:
+  lab3:
+    driver: "bridge"
+    external: false

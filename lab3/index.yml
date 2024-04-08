@@ -1,0 +1,293 @@
+openapi: '3.0.2'
+info:
+  title: Сервер поездок и маршрутов
+  version: '1.0'
+
+servers:
+  - url: http://127.0.0.1:8080
+    description: Сервер поездок и маршрутов
+
+paths:
+  /route/create:
+    post:
+      summary: Создание маршрута
+      parameters:
+        - in: query
+          name: start
+          required: true
+          schema:
+            type: string
+        - in: query  
+          name: end
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+
+  /route/modify:
+    post:
+      summary: Изменение маршрута
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: start
+          required: true
+          schema:
+            type: string
+        - in: query  
+          name: end
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+    
+  /route/delete:
+    post:
+      summary: Удаление маршрута
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /route/id:
+    get:
+      summary: Поиск маршрута по id 
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '404':
+          description: Маршрут не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/user_routes:
+    get:
+      summary: Получение маршрутов пользователя
+      parameters:
+        - in: query
+          name: users
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+        '404':
+          description: Пользователь не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/create:
+    post:
+      summary: Создание поездки
+      parameters:
+        - in: query
+          description: Водитель
+          name: user
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: route_id
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+      
+  /travel/modify:
+    post:
+      summary: Изменение поездки
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: user 
+          required: true
+          schema:
+            type: integer
+        - in: query
+          name: route_id
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/add_user:
+    post:
+      summary: Добавление пользователя
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: users 
+          required: true
+          schema:
+            type: integer
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/user_delete:
+    post:
+      summary: Удаление пользователя
+      parameters:
+        - in: query
+          name: id
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: users 
+          required: true
+          schema:
+            type: integer
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/delete:
+    post:
+      summary: Удаление поездки
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+    
+  /travel/id:
+    post:
+      summary: Получение информации о поездке
+      parameters:
+        - in: query
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              properties: 
+                users: 
+                  type: array
+                route_id:
+                  type: integer
+                data:
+                  type: string
+        '404':
+          description: Поездка не найдена
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка

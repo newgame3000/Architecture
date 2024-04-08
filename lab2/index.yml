@@ -65,7 +65,7 @@ paths:
           description: Неожиданная ошибка
 
 
-  /user/regiser:
+  /user/register:
     post:
       summary: Регистрация пользователя
       parameters:
