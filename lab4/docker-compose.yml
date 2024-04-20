@@ -1,0 +1,79 @@
+services:
+  lab2:
+    tty: true
+    container_name: lab2
+    build:
+      context: .
+      dockerfile: user.Dockerfile
+    environment:
+      - DB_HOST=lab2_db
+      - DB_PORT=5432
+      - DB_LOGIN=stud
+      - DB_PASSWORD=stud
+      - DB_DATABASE=archdb
+    depends_on:
+      lab2_db:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+    networks:
+      - network
+
+  lab2_db:
+    container_name: postgres
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=stud
+      - POSTGRES_PASSWORD=stud
+      - PGDATA=/data/postgres
+      - POSTGRES_DB=archdb
+    volumes:
+      - lab2_db:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - network
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -d postgres" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  
+  lab3:
+    tty: true
+    container_name: lab3
+    build:
+      context: .
+      dockerfile: travel.Dockerfile
+    environment:
+      - MONGO_DB_HOST=mongo
+      - MONGO_DB_PORT=27017
+    depends_on:
+      mongo:
+        condition: service_healthy
+    ports:
+      - 8081:8081
+    networks:
+      - network
+
+  mongo:
+    image: mongo:5.0
+    restart: on-failure
+    volumes:
+      - mongodbdata:/data/db
+    ports:
+      - '27017:27017'
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+    networks:
+      - network
+    
+volumes:
+  mongodbdata:
+  lab2_db:
+
+networks:
+  network:
+    driver: "bridge"
+    external: false
