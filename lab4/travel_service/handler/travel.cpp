@@ -9,6 +9,7 @@
 #include <Poco/Hash.h>
 #include "Poco/JWT/Token.h"
 #include "Poco/JWT/Signer.h"
+#include "Poco/Base64Decoder.h"
 
 #include <sstream>
 #include <ctime>
@@ -48,7 +49,6 @@ Poco::JSON::Object::Ptr travelToJSON(string str)
     return root;
 }
 
-
 bool ExtractPayloadFromToken(string &jwt_token, int &id, string &login) {
     if (jwt_token.length() == 0) {
         return false;
@@ -76,7 +76,6 @@ string getJWTKey() {
     }
     return "0123456789ABCDEF0123456789ABCDEF";
 }
-
 
 void TravelRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerResponse &response)
 {
@@ -199,7 +198,10 @@ void TravelRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerR
         string route_id = form.get("route_id");
         string date = form.get("date");
 
-        string token = form.get("user").c_str();
+        string scheme, token;
+        request.getCredentials(scheme, token);
+        cout << "scheme: " << scheme << " identity: " << token << endl;
+        // string token = form.get("user").c_str();
 
         int user_id = 0;
         string login;
@@ -236,7 +238,11 @@ void TravelRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerR
         HTMLForm form(request, request.stream());
 
         string id = form.get("id");
-        string token = form.get("user").c_str();
+        
+        string scheme, token;
+        request.getCredentials(scheme, token);
+        cout << "scheme: " << scheme << " identity: " << token << endl;
+        
         string route_id = form.get("route_id");
         string date = form.get("date");
 
@@ -324,7 +330,9 @@ void TravelRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerR
         HTMLForm form(request, request.stream());
         
         string id = form.get("id");
-        string token = form.get("users").c_str();
+        string scheme, token;
+        request.getCredentials(scheme, token);
+        cout << "scheme: " << scheme << " identity: " << token << endl;
 
         int user_id = 0;
         string login;
@@ -356,7 +364,9 @@ void TravelRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerR
         Poco::MongoDB::Document doc;
         doc.add("_id", id);
 
-        string token = form.get("users").c_str();
+        string scheme, token;
+        request.getCredentials(scheme, token);
+        cout << "scheme: " << scheme << " identity: " << token << endl;
 
         int user_id = 0;
         string login;
@@ -381,7 +391,9 @@ void TravelRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerR
         DatabaseMongo &db = DatabaseMongo::Get();
         HTMLForm form(request, request.stream());
         
-        string token = form.get("users").c_str();
+        string scheme, token;
+        request.getCredentials(scheme, token);
+        cout << "scheme: " << scheme << " identity: " << token << endl;
 
         int user_id = 0;
         string login;

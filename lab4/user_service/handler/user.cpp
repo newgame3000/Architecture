@@ -7,6 +7,7 @@
 #include <Poco/Data/RecordSet.h>
 #include <Poco/Net/HTMLForm.h>
 #include <Poco/Hash.h>
+#include <Poco/Base64Decoder.h>
 
 using namespace std;
 using namespace Poco::Data;
@@ -22,6 +23,21 @@ string generateToken(long &id, string &login) {
 
     Poco::JWT::Signer signer(getJWTKey());
     return signer.sign(token, Poco::JWT::Signer::ALGO_HS256);
+}
+
+pair<string, string> getCredentials(const string identity) {
+    istringstream istr(identity);
+    ostringstream ostr;
+    Poco::Base64Decoder b64in(istr);
+    copy(istreambuf_iterator<char>(b64in),
+         istreambuf_iterator<char>(),
+         ostreambuf_iterator<char>(ostr));
+    string decoded = ostr.str();
+
+    size_t pos = decoded.find(':');
+    string login = decoded.substr(0, pos);
+    string password = decoded.substr(pos + 1);
+    return {login, password};
 }
 
 string getJWTKey() {
@@ -53,21 +69,25 @@ void UserRequestHandler::handleRequest(HTTPServerRequest &request, HTTPServerRes
     {
         try
         {
-            HTMLForm form(request, request.stream());
+            // HTMLForm form(request, request.stream());
             cout << "request.getURI(): " << request.getURI() << endl;
 
             Session session = Database::get().create_session();
             Statement select(session);
 
-            string login = form.get("login");
-            string password = form.get("password");
+            string scheme, info;
+            request.getCredentials(scheme, info);
+            cout << "scheme: " << scheme << " identity: " << info << endl;
 
-            cout << "begin\n";
+            
+            pair <string, string> logpass = getCredentials(info);
+            string login = logpass.first;
+            string password = logpass.second;
 
             Hash<string> hash;
-            string passH = to_string(hash(form.get("password")));
+            string passH = to_string(hash(password));
 
-            cout << "passH: " << passH;
+            // cout << "passH: " << passH;
 
             long id;
 

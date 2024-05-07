@@ -36,17 +36,8 @@ paths:
   /user/auth:
     get:
       summary: Авторизация пользователя
-      parameters:
-        - in: query
-          name: login
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: password
-          required: true
-          schema:
-            type: string
+      security:
+        - basicAuth: []
       responses:  
         '200':
           description: OK
@@ -235,3 +226,8 @@ components:
         phone:
           type: string
           description: Номер телефона
+
+  securitySchemes:
+    basicAuth:     
+      type: http
+      scheme: basic

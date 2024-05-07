@@ -17,6 +17,7 @@ class UserRequestHandler : public HTTPRequestHandler {
 
 string getJWTKey();
 string generateToken(long &id, string &login);
+pair<string, string> getCredentials(const string identity);
 
 class User{
     public:

@@ -16,6 +16,7 @@ class TravelRequestHandler : public HTTPRequestHandler {
 Poco::JSON::Object::Ptr routeToJSON(string str);
 Poco::JSON::Object::Ptr travelToJSON(string str);
 bool ExtractPayloadFromToken(string &jwt_token, int &id, string &login);
+
 string getJWTKey();
 
 #endif

@@ -6,7 +6,7 @@ info:
 servers:
   - url: http://127.0.0.1:8081
     description: Сервер поездок и маршрутов
-
+  
 paths:
   /route/create:
     post:
@@ -108,13 +108,8 @@ paths:
   /travel/user_routes:
     get:
       summary: Получение маршрутов пользователя
-      parameters:
-        - in: query
-          description: Токен
-          name: users
-          required: true
-          schema:
-            type: string
+      security:
+        - basicAuth: []
       responses:  
         '200':
           description: OK
@@ -134,13 +129,9 @@ paths:
   /travel/create:
     post:
       summary: Создание поездки
+      security:
+        - basicAuth: []
       parameters:
-        - in: query
-          description: Токен(Водитель) 
-          name: user
-          required: true
-          schema:
-            type: string
         - in: query
           name: route_id
           required: true
@@ -164,18 +155,14 @@ paths:
   /travel/modify:
     post:
       summary: Изменение поездки
+      security:
+        - basicAuth: []
       parameters:
         - in: query
-          description: Токен
           name: id 
           required: true
           schema:
             type: string
-        - in: query
-          name: user 
-          required: true
-          schema:
-            type: integer
         - in: query
           name: route_id
           required: true
@@ -199,15 +186,11 @@ paths:
   /travel/add_user:
     post:
       summary: Добавление пользователя
+      security:
+        - basicAuth: []
       parameters:
         - in: query
-          description: Токен
           name: id 
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: users 
           required: true
           schema:
             type: string
@@ -224,15 +207,11 @@ paths:
   /travel/user_delete:
     post:
       summary: Удаление пользователя
+      security:
+        - basicAuth: []
       parameters:
         - in: query
-          description: Токен
-          name: id
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: users 
+          name: id 
           required: true
           schema:
             type: string
@@ -295,3 +274,12 @@ paths:
                   type: string
         '500':
           description: Неожиданная ошибка
+  
+components:
+  securitySchemes:
+    basicAuth:     
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  
