@@ -1,0 +1,112 @@
+services:
+  user_service:
+    tty: true
+    container_name: user_service
+    build:
+      context: .
+      dockerfile: user.Dockerfile
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_LOGIN=stud
+      - DB_PASSWORD=stud
+      - DB_DATABASE=archdb
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+    networks:
+      - network
+
+  postgres:
+    container_name: postgres
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=stud
+      - POSTGRES_PASSWORD=stud
+      - PGDATA=/data/postgres
+      - POSTGRES_DB=archdb
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - network
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -d postgres" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  
+  travel_service:
+    tty: true
+    container_name: travel_service
+    build:
+      context: .
+      dockerfile: travel.Dockerfile
+    environment:
+      - MONGO_DB_HOST=mongo
+      - MONGO_DB_PORT=27017
+    depends_on:
+      mongo:
+        condition: service_healthy
+    ports:
+      - 8081:8081
+    networks:
+      - network
+
+  mongo:
+    image: mongo:5.0
+    restart: on-failure
+    volumes:
+      - mongodbdata:/data/db
+    ports:
+      - '27017:27017'
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+    networks:
+      - network
+  
+  api:
+    tty: true
+    container_name: api
+    build:
+      context: .
+      dockerfile: api.Dockerfile
+    environment:
+      - USER_ADRESS=http://user_service:8080
+      - TRAVEL_ADRESS=http://travel_service:8081
+      - CACHE_HOST=redis
+      - CACHE_PORT=6379
+    ports:
+      - 8082:8082
+    networks:
+      - network
+
+  redis:
+    container_name: cache_lab4
+    image: redis:6.2-alpine
+    environment:
+      - CACHE_HOST=redis
+      - CACHE_PORT=6379
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning 
+    networks:
+      - network
+    volumes: 
+      - redis:/data
+
+
+volumes:
+  mongodbdata:
+  redis:
+  postgres:
+
+networks:
+  network:
+    driver: "bridge"
+    external: false
