@@ -1,0 +1,492 @@
+openapi: '3.0.2'
+info:
+  title: Api
+  version: '1.0'
+
+servers:
+  - url: http://127.0.0.1:8082
+    description: Api
+
+paths:
+  /user/login:
+    get:
+      summary: Поиск пользователя по логину
+      parameters:
+        - in: query
+          name: login
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Пользователь не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /user/name:
+    get:
+      summary: Поиск по маске имя, фамилия
+      parameters:
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: surname
+          required: true
+          schema:
+            type: string
+          
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Пользователь не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+
+  /user/register:
+    post:
+      summary: Регистрация пользователя
+      parameters:
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: surname
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: login
+          required: true
+          schema:
+            type: string
+        
+        - in: query
+          name: pass
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: phone
+          required: true
+          schema:
+            type: string
+          
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: integer 
+        '500':
+          description: Неожиданная ошибка
+      
+  /user/modify:
+    post:
+      summary: Изменение данных пользователя
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: integer
+
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: surname
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: login
+          required: true
+          schema:
+            type: string
+        
+        - in: query
+          name: pass
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: phone
+          required: true
+          schema:
+            type: string
+          
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /user/delete:
+    post:
+      summary: Удаление данных пользователя
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: integer
+
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+  
+  /route/create:
+    post:
+      security:
+        - basicAuth: []
+      summary: Создание маршрута
+      parameters:
+        - in: query
+          name: start
+          required: true
+          schema:
+            type: string
+        - in: query  
+          name: end
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+
+  /route/modify:
+    post:
+      security:
+        - basicAuth: []
+      summary: Изменение маршрута
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: start
+          required: true
+          schema:
+            type: string
+        - in: query  
+          name: end
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+    
+  /route/delete:
+    post:
+      security:
+        - basicAuth: []
+      summary: Удаление маршрута
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /route/id:
+    get:
+      security:
+        - basicAuth: []
+      summary: Поиск маршрута по id 
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '404':
+          description: Маршрут не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/user_routes:
+    get:
+      security:
+        - basicAuth: []
+      summary: Получение маршрутов пользователя
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+        '404':
+          description: Пользователь не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/create:
+    post:
+      security:
+        - basicAuth: []
+      summary: Создание поездки
+      parameters:
+        - in: query
+          name: route_id
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+      
+  /travel/modify:
+    post:
+      security:
+        - basicAuth: []
+      summary: Изменение поездки
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: route_id
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/add_user:
+    post:
+      security:
+        - basicAuth: []
+      summary: Добавление пользователя
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/user_delete:
+    post:
+      security:
+        - basicAuth: []
+      summary: Удаление пользователя
+      parameters:
+        - in: query
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+
+  /travel/delete:
+    post:
+      security:
+        - basicAuth: []
+      summary: Удаление поездки
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+    
+  /travel/id:
+    get:
+      security:
+        - basicAuth: []
+      summary: Получение информации о поездке
+      parameters:
+        - in: query
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              properties: 
+                users: 
+                  type: array
+                route_id:
+                  type: integer
+                data:
+                  type: string
+        '404':
+          description: Поездка не найдена
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Идентификатор пользователя
+
+        name:
+          type: string
+          description: Имя посльзователя
+        
+        surname:
+          type: string
+          description: Фамилия пользователя
+
+        login:
+          type: string
+          description: Логин пользователя
+
+        password:
+          type: string
+          description: Пароль пользователя
+        
+        phone:
+          type: string
+          description: Номер телефона
+
+  securitySchemes:
+    basicAuth:     
+      type: http
+      scheme: basic
+

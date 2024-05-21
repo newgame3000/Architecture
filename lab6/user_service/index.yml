@@ -1,0 +1,233 @@
+openapi: '3.0.2'
+info:
+  title: Сервер авторизации
+  version: '1.0'
+
+servers:
+  - url: http://127.0.0.1:8080
+    description: Сервер авторизации
+
+paths:
+  /user/login:
+    get:
+      summary: Поиск пользователя по логину
+      parameters:
+        - in: query
+          name: login
+          required: true
+          schema:
+            type: string
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Пользователь не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /user/auth:
+    get:
+      summary: Авторизация пользователя
+      security:
+        - basicAuth: []
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Пользователь не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /user/name:
+    get:
+      summary: Поиск по маске имя, фамилия
+      parameters:
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: surname
+          required: true
+          schema:
+            type: string
+          
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Пользователь не найден
+          content:
+            application/json:
+                schema:
+                  type: string
+        '500':
+          description: Неожиданная ошибка
+
+
+  /user/register:
+    post:
+      summary: Регистрация пользователя
+      parameters:
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: surname
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: login
+          required: true
+          schema:
+            type: string
+        
+        - in: query
+          name: pass
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: phone
+          required: true
+          schema:
+            type: string
+          
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: integer 
+        '500':
+          description: Неожиданная ошибка
+      
+  /user/modify:
+    post:
+      summary: Изменение данных пользователя
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: integer
+
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: surname
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: login
+          required: true
+          schema:
+            type: string
+        
+        - in: query
+          name: pass
+          required: true
+          schema:
+            type: string
+
+        - in: query
+          name: phone
+          required: true
+          schema:
+            type: string
+          
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string
+        '500':
+          description: Неожиданная ошибка
+
+  /user/delete:
+    post:
+      summary: Удаление данных пользователя
+      parameters:
+        - in: query
+          name: id 
+          required: true
+          schema:
+            type: integer
+
+      responses:  
+        '200':
+          description: OK
+          content:
+            application/json:
+             schema:
+              type: string 
+        '500':
+          description: Неожиданная ошибка
+    
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Идентификатор пользователя
+
+        name:
+          type: string
+          description: Имя посльзователя
+        
+        surname:
+          type: string
+          description: Фамилия пользователя
+
+        login:
+          type: string
+          description: Логин пользователя
+
+        password:
+          type: string
+          description: Пароль пользователя
+        
+        phone:
+          type: string
+          description: Номер телефона
+
+  securitySchemes:
+    basicAuth:     
+      type: http
+      scheme: basic
